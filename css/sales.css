@@ -74,9 +74,9 @@ a, button, summary, label,
   animation: heroSpotMove 24s ease-in-out infinite alternate;
 }
 @keyframes heroSpotMove {
-  0%   { opacity: 0.82; transform: translate(-7%, -3%) scale(1.03); }
-  50%  { opacity: 1;    transform: translate(7%, 4%) scale(1.18); }
-  100% { opacity: 0.9;  transform: translate(-3%, 2%) scale(1.09); }
+  0%   { opacity: 0.82; transform: translate(-20%, -8%) scale(1.03); }
+  50%  { opacity: 1;    transform: translate(20%, 11%) scale(1.22); }
+  100% { opacity: 0.9;  transform: translate(-9%, 5%) scale(1.10); }
 }
 /* viñeta inferior para fundir a negro, como en la plantilla */
 .hero-bg::after {
@@ -159,8 +159,8 @@ a, button, summary, label,
   background: radial-gradient(circle, rgba(0,47,164,0.30), transparent 56%);
   animation: orbDrift2 32s ease-in-out infinite alternate;
 }
-@keyframes orbDrift1 { 0% { transform: translate(0,0) scale(1); } 50% { transform: translate(300px,-180px) scale(1.14); } 100% { transform: translate(130px,-250px) scale(1.06); } }
-@keyframes orbDrift2 { 0% { transform: translate(0,0) scale(1); } 50% { transform: translate(-300px,-180px) scale(1.14); } 100% { transform: translate(-130px,-250px) scale(1.06); } }
+@keyframes orbDrift1 { 0% { transform: translate(0,0) scale(1); } 50% { transform: translate(560px,-340px) scale(1.18); } 100% { transform: translate(240px,-480px) scale(1.08); } }
+@keyframes orbDrift2 { 0% { transform: translate(0,0) scale(1); } 50% { transform: translate(-560px,-340px) scale(1.18); } 100% { transform: translate(-240px,-480px) scale(1.08); } }
 
 @media (prefers-reduced-motion: reduce) {
   .hero-square { animation: none; }
