@@ -69,13 +69,14 @@ a, button, summary, label,
 .hero-spot {
   position: absolute; inset: 0;
   background:
-    radial-gradient(ellipse 60% 62% at 50% -10%, rgba(1,93,244,0.50) 0%, rgba(1,93,244,0.16) 32%, transparent 58%),
-    radial-gradient(circle 440px at 50% 0%, rgba(120,170,255,0.26), transparent 60%);
-  animation: heroSpotMove 16s ease-in-out infinite alternate;
+    radial-gradient(ellipse 88% 82% at 50% -8%, rgba(1,93,244,0.50) 0%, rgba(1,93,244,0.16) 36%, transparent 64%),
+    radial-gradient(circle 680px at 50% 0%, rgba(120,170,255,0.26), transparent 64%);
+  animation: heroSpotMove 34s ease-in-out infinite alternate;
 }
 @keyframes heroSpotMove {
-  0%   { opacity: 0.82; transform: translate(-2.5%, 0) scale(1); }
-  100% { opacity: 1;    transform: translate(2.5%, 1.5%) scale(1.07); }
+  0%   { opacity: 0.82; transform: translate(-4%, -1%) scale(1.02); }
+  50%  { opacity: 1;    transform: translate(3.5%, 2.5%) scale(1.12); }
+  100% { opacity: 0.9;  transform: translate(-1.5%, 1%) scale(1.06); }
 }
 /* viñeta inferior para fundir a negro, como en la plantilla */
 .hero-bg::after {
@@ -148,18 +149,18 @@ a, button, summary, label,
 }
 /* orbe izquierdo, más pegado a la esquina para dejar negro entre él y el central */
 .hero-orb--1 {
-  width: 860px; height: 860px; bottom: -34%; left: -26%;
-  background: radial-gradient(circle, rgba(1,93,244,0.34), transparent 54%);
-  animation: orbDrift1 24s ease-in-out infinite alternate;
+  width: 1240px; height: 1240px; bottom: -42%; left: -32%;
+  background: radial-gradient(circle, rgba(1,93,244,0.34), transparent 56%);
+  animation: orbDrift1 42s ease-in-out infinite alternate;
 }
 /* orbe derecho, más pegado a la esquina para dejar negro entre él y el central */
 .hero-orb--2 {
-  width: 860px; height: 860px; bottom: -34%; right: -26%;
-  background: radial-gradient(circle, rgba(0,47,164,0.30), transparent 54%);
-  animation: orbDrift2 24s ease-in-out infinite alternate;
+  width: 1240px; height: 1240px; bottom: -42%; right: -32%;
+  background: radial-gradient(circle, rgba(0,47,164,0.30), transparent 56%);
+  animation: orbDrift2 42s ease-in-out infinite alternate;
 }
-@keyframes orbDrift1 { 0% { transform: translate(0,0); } 50% { transform: translate(120px,-70px); } 100% { transform: translate(40px,-110px); } }
-@keyframes orbDrift2 { 0% { transform: translate(0,0); } 50% { transform: translate(-120px,-70px); } 100% { transform: translate(-40px,-110px); } }
+@keyframes orbDrift1 { 0% { transform: translate(0,0) scale(1); } 50% { transform: translate(190px,-120px) scale(1.09); } 100% { transform: translate(80px,-170px) scale(1.04); } }
+@keyframes orbDrift2 { 0% { transform: translate(0,0) scale(1); } 50% { transform: translate(-190px,-120px) scale(1.09); } 100% { transform: translate(-80px,-170px) scale(1.04); } }
 
 @media (prefers-reduced-motion: reduce) {
   .hero-spot, .hero-square, .hero-orb--1, .hero-orb--2 { animation: none; }
