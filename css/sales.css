@@ -11,9 +11,8 @@
   --h-ice:    #5aa2ff;   /* tono claro para el shimmer/movim. */
   --h-deep:   #030512;   /* fondo casi negro del flyer        */
 
-  /* Tipografía de títulos: la primera que eligió el usuario (grotesca neutra),
-     NO Syne. El body queda igual. */
-  --font-display: 'Inter', system-ui, sans-serif;
+  /* Tipografía de títulos: grotesca neutra premium (Space Grotesk), on-brand. */
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
 }
 
 /* ============================================
@@ -184,7 +183,7 @@ a, button, summary, label,
   font-size: 12px; letter-spacing: 5px; text-transform: uppercase;
   color: var(--h-ice); margin: 0 0 28px;
   opacity: 0; transform: translateY(20px);
-  animation: revealUp 0.8s var(--ease) 2.2s forwards;
+  animation: revealUp 0.7s var(--ease) 0.2s forwards;
 }
 .hero-headline {
   font-family: var(--font-display);
@@ -203,7 +202,7 @@ a, button, summary, label,
   transform: translateY(28px);
   animation: heroLineUp 0.9s var(--ease) forwards;
 }
-.hero-headline .hl-1 { animation-delay: 2.4s; }
+.hero-headline .hl-1 { animation-delay: 0.35s; }
 @keyframes heroLineUp {
   from { opacity: 0; transform: translateY(28px); filter: blur(6px); }
   to   { opacity: 1; transform: translateY(0);    filter: blur(0); }
@@ -220,8 +219,8 @@ a, button, summary, label,
   -webkit-background-clip: text; background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.hl-move .word:nth-child(1) > span { animation: wordReveal 0.9s var(--ease) 2.6s forwards, heroShimmer 6s ease-in-out 3.4s infinite; }
-.hl-move .word:nth-child(2) > span { animation: wordReveal 0.9s var(--ease) 2.75s forwards, heroShimmer 6s ease-in-out 3.4s infinite; }
+.hl-move .word:nth-child(1) > span { animation: wordReveal 0.8s var(--ease) 0.5s forwards, heroShimmer 6s ease-in-out 1.8s infinite; }
+.hl-move .word:nth-child(2) > span { animation: wordReveal 0.8s var(--ease) 0.62s forwards, heroShimmer 6s ease-in-out 1.8s infinite; }
 @keyframes wordReveal {
   from { transform: translateY(110%) skewY(6deg); }
   to   { transform: translateY(0)    skewY(0deg); }
@@ -238,7 +237,7 @@ a, button, summary, label,
   box-shadow: 0 0 14px rgba(1,93,244,0.6);
   margin: 10px auto 28px;
   opacity: 0; transform: scaleX(0); transform-origin: center;
-  animation: heroRule 0.7s var(--ease) 3.0s forwards;
+  animation: heroRule 0.7s var(--ease) 0.8s forwards;
 }
 @keyframes heroRule { to { opacity: 1; transform: scaleX(1); } }
 
@@ -250,7 +249,7 @@ a, button, summary, label,
   line-height: 1.65;
   margin: 0 auto 40px;
   opacity: 0; transform: translateY(20px);
-  animation: revealUp 0.8s var(--ease) 3.15s forwards;
+  animation: revealUp 0.7s var(--ease) 0.72s forwards;
 }
 .hero-sub .hl-blue { color: var(--h-ice); font-weight: 500; }
 

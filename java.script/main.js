@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
         loadingScreen.classList.add('exit');
         document.body.style.overflow = '';
-      }, 400);
+      }, 150);
     }
-  }, 80);
+  }, 55);
   document.body.style.overflow = 'hidden';
 
   /* ============================================
@@ -166,10 +166,10 @@ document.addEventListener('DOMContentLoaded', () => {
           setTimeout(() => {
             const circle = s.querySelector('.tl-circle');
             if (circle) {
-              circle.style.borderColor = '#7B2FFF';
-              circle.style.background  = '#7B2FFF';
+              circle.style.borderColor = '#015df4';
+              circle.style.background  = '#015df4';
               circle.style.color       = '#fff';
-              circle.style.boxShadow   = '0 0 28px rgba(123,47,255,0.5)';
+              circle.style.boxShadow   = '0 0 28px rgba(1,93,244,0.55)';
             }
           }, i * 380);
         });
