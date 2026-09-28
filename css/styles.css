@@ -107,7 +107,7 @@ body::before {
   filter: blur(6px);
   animation: loadLogoIn 1s var(--ease) 0.3s forwards;
 }
-.loading-logo-img { height: 115px; width: auto; display: block; }
+.loading-logo-img { height: 40px; width: auto; display: block; }
 
 @keyframes loadLogoIn {
   to { opacity: 1; transform: translateY(0); filter: blur(0); }
@@ -157,8 +157,54 @@ body::before {
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
 }
-.nav-logo { color: var(--text); display: flex; align-items: center; height: 52px; overflow: hidden; margin-top: 14px; }
-.logo-img { height: 105px; display: block; }
+.nav-logo { color: var(--text); display: flex; align-items: center; height: 40px; margin-top: 0; }
+
+.logo-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.logo-wordmark {
+  height: 28px;
+  width: auto;
+  display: block;
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  transform-origin: left center;
+  will-change: opacity, transform;
+}
+
+.logo-icon-wrap {
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 0;
+  transform: scale(0.6) translateX(-8px);
+  transform-origin: left center;
+  pointer-events: none;
+  will-change: opacity, transform;
+}
+
+.logo-isotipo {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+.logo-slash {
+  display: block;
+  width: 1.5px;
+  height: 26px;
+  background: var(--text);
+  transform: rotate(-20deg);
+  opacity: 0.5;
+  border-radius: 1px;
+}
+
 
 .nav-links {
   display: flex;
@@ -1936,6 +1982,9 @@ section { padding: 120px 60px; }
   section { padding: 72px 24px; }
   #navbar { padding: 20px 24px; }
   #navbar.scrolled { padding: 14px 24px; }
+  .logo-wordmark { height: 22px; }
+  .logo-isotipo { height: 26px; }
+  .logo-slash { height: 20px; }
   #hero { padding: 0 24px 60px; }
   .scroll-indicator { right: 24px; }
   .nav-links { display: none; }
