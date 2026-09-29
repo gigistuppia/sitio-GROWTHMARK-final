@@ -157,52 +157,8 @@ body::before {
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
 }
-.nav-logo { color: var(--text); display: flex; align-items: center; height: 40px; margin-top: 0; }
-
-.logo-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 40px;
-}
-
-.logo-wordmark {
-  height: 28px;
-  width: auto;
-  display: block;
-  opacity: 1;
-  transform: translateX(0) scale(1);
-  transform-origin: left center;
-  will-change: opacity, transform;
-}
-
-.logo-icon-wrap {
-  position: absolute;
-  left: 0;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  opacity: 0;
-  transform: scale(0.6) translateX(-8px);
-  transform-origin: left center;
-  pointer-events: none;
-  will-change: opacity, transform;
-}
-
-.logo-isotipo {
-  height: 22px;
-  width: auto;
-  display: block;
-  color: var(--text);
-}
-
-.logo-slash {
-  height: 22px;
-  width: 8px;
-  display: block;
-  color: var(--text);
-  opacity: 0.7;
-}
+.nav-logo { display: flex; align-items: center; height: 40px; }
+.logo-img { height: 36px; width: auto; display: block; }
 
 
 .nav-links {
@@ -1981,9 +1937,7 @@ section { padding: 120px 60px; }
   section { padding: 72px 24px; }
   #navbar { padding: 20px 24px; }
   #navbar.scrolled { padding: 14px 24px; }
-  .logo-wordmark { height: 20px; }
-  .logo-isotipo { height: 18px; }
-  .logo-slash { height: 18px; }
+  .logo-img { height: 28px; }
   #hero { padding: 0 24px 60px; }
   .scroll-indicator { right: 24px; }
   .nav-links { display: none; }

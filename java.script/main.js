@@ -55,43 +55,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ============================================
-     NAVBAR SCROLL + LOGO MORPH
+     NAVBAR SCROLL
      ============================================ */
   const navbar = document.getElementById('navbar');
-  const logoWordmark = document.querySelector('.logo-wordmark');
-  const logoIconWrap = document.querySelector('.logo-icon-wrap');
-
-  const SCROLL_START = 20;
-  const SCROLL_END = 80;
-
-  function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
-
-  let lastScrollY = 0;
-  let ticking = false;
-
-  function updateLogoMorph() {
-    const y = window.scrollY;
-    navbar.classList.toggle('scrolled', y > 60);
-
-    if (logoWordmark && logoIconWrap) {
-      const raw = Math.min(Math.max((y - SCROLL_START) / (SCROLL_END - SCROLL_START), 0), 1);
-      const t = easeOutCubic(raw);
-
-      logoWordmark.style.opacity = 1 - t;
-      logoWordmark.style.transform = `translateX(${t * 12}px) scale(${1 - t * 0.2})`;
-
-      logoIconWrap.style.opacity = t;
-      logoIconWrap.style.transform = `scale(${0.6 + t * 0.4}) translateX(${(1 - t) * -8}px)`;
-      logoIconWrap.style.pointerEvents = t > 0.5 ? 'auto' : 'none';
-    }
-    ticking = false;
-  }
-
   window.addEventListener('scroll', () => {
-    if (!ticking) {
-      requestAnimationFrame(updateLogoMorph);
-      ticking = true;
-    }
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
   }, { passive: true });
 
   /* ============================================
