@@ -176,7 +176,8 @@ document.addEventListener('DOMContentLoaded', () => {
         procObs.disconnect();
       }
     }, { threshold: 0.3 });
-    procObs.observe(document.getElementById('process'));
+    var procEl = document.getElementById('process');
+    if (procEl) procObs.observe(procEl);
   }
 
   /* ============================================

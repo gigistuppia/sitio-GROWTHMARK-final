@@ -500,6 +500,16 @@ a, button, summary, label,
 .why-col--solution .why-list li svg { color: var(--accent2); }
 .why-col--solution .why-list li { color: var(--text); }
 
+/* --- CRM Sub --- */
+.crm-sub {
+  font-size: clamp(16px, 1.5vw, 19px);
+  color: var(--text2);
+  line-height: 1.7;
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 /* ============================================
    FAQ
    ============================================ */

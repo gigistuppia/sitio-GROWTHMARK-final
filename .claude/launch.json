@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "arterix-site",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["-e", "require('http').createServer((q,r)=>{const fs=require('fs'),p=require('path'),u=require('url').parse(q.url).pathname,f=p.join('.',u==='/'?'index.html':decodeURIComponent(u)),e=p.extname(f),t={'.html':'text/html','.css':'text/css','.js':'application/javascript','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.svg':'image/svg+xml','.json':'application/json','.woff2':'font/woff2','.zip':'application/zip'};fs.readFile(f,(err,d)=>{if(err){r.writeHead(404);r.end()}else{r.writeHead(200,{'Content-Type':t[e]||'application/octet-stream'});r.end(d)}})}).listen(8080,()=>console.log('ok 8080'))"],
+      "port": 8080
+    }
+  ]
+}
