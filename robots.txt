@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
+Disallow: /lucianomattica-design/
+Disallow: /scrollcraft/
+Disallow: /assets/
+Disallow: /design.md
+Disallow: /img/files.zip
+Disallow: /img/ChatGPT*
+Disallow: /img/WhatsApp*
 
-Sitemap: https://growthmark.vercel.app/sitemap.xml
+Sitemap: https://sitio-growthmark-final.vercel.app/sitemap.xml
