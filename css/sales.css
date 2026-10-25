@@ -245,7 +245,7 @@ a, button, summary, label,
   font-size: clamp(16px, 1.6vw, 22px);
   font-weight: 300;
   color: var(--text2);
-  max-width: 720px;
+  max-width: 530px;
   line-height: 1.65;
   margin: 0 auto 40px;
   opacity: 0; transform: translateY(20px);
