@@ -452,7 +452,7 @@ a, button, summary, label,
   text-decoration: none;
   background: radial-gradient(circle at 50% 38%, rgba(123,47,255,0.14), var(--bg2) 70%);
   box-shadow: inset 0 0 40px rgba(123,47,255,0.1);
-  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .about-cta-ring {
   position: absolute; inset: 0; border-radius: 50%; padding: 2px;
@@ -461,15 +461,15 @@ a, button, summary, label,
   -webkit-mask-composite: xor; mask-composite: exclude;
   animation: orbSpin 7s linear infinite;
 }
-.about-cta:hover { transform: scale(1.05); box-shadow: 0 0 50px rgba(123,47,255,0.35); }
-.about-cta:hover .about-cta-ring { animation-duration: 2.5s; }
+.about-cta:hover { transform: scale(1.03); box-shadow: 0 0 40px rgba(123,47,255,0.25); }
+.about-cta:hover .about-cta-ring { animation-duration: 5s; }
 .about-cta:active { transform: scale(0.99); }
-.about-cta-inner { text-align: center; width: 100%; padding: 0 6%; }
-.about-cta-name {
-  font-family: var(--font-display); font-weight: 800;
-  font-size: clamp(18px, 2vw, 26px); line-height: 1;
-  letter-spacing: 0.5px; color: var(--text); white-space: nowrap;
+.about-cta-inner { text-align: center; width: 100%; padding: 0 6%; display: grid; place-items: center; }
+.about-cta-logo {
+  width: 85%; height: auto; opacity: 0.92;
+  transition: opacity 0.6s var(--ease);
 }
+.about-cta:hover .about-cta-logo { opacity: 1; }
 @media (prefers-reduced-motion: reduce) { .about-cta-ring { animation: none; } }
 
 /* ============================================
