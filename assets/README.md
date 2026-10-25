@@ -1,4 +1,4 @@
-# assets/ — GROWTHMARK
+# assets/ — ARTERIX
 
 Lista completa de imágenes / clips / SVG que la landing necesita para verse profesional. Cada entrada tiene: **nombre de archivo, formato, orientación, sección, y qué muestra**.
 
@@ -10,10 +10,10 @@ Lista completa de imágenes / clips / SVG que la landing necesita para verse pro
 
 | # | Ruta                            | Formato       | Orientación | Estado | Descripción                                                   |
 |---|---------------------------------|---------------|-------------|--------|----------------------------------------------------------------|
-| 1.1 | `logo/growthmark.svg`         | SVG           | libre       | [ ] esperando al usuario | Logo principal, en versión monocromática blanca (para fondos oscuros). |
-| 1.2 | `logo/growthmark-mark.svg`    | SVG           | cuadrado    | [ ] esperando al usuario | Isotipo solo (el aro/símbolo, sin wordmark). Para favicon y OG. |
-| 1.3 | `logo/growthmark-wordmark.svg`| SVG           | horizontal  | [ ] esperando al usuario | Solo texto "GROWTHMARK" en la tipografía de marca.             |
-| 1.4 | `favicon.ico`                 | ICO 32×32     | cuadrado    | [ ] generar             | Derivado de `growthmark-mark.svg`, fondo `#050810`.            |
+| 1.1 | `logo/arterix.svg`         | SVG           | libre       | [ ] esperando al usuario | Logo principal, en versión monocromática blanca (para fondos oscuros). |
+| 1.2 | `logo/arterix-mark.svg`    | SVG           | cuadrado    | [ ] esperando al usuario | Isotipo solo (el aro/símbolo, sin wordmark). Para favicon y OG. |
+| 1.3 | `logo/arterix-wordmark.svg`| SVG           | horizontal  | [ ] esperando al usuario | Solo texto "ARTERIX" en la tipografía de marca.             |
+| 1.4 | `favicon.ico`                 | ICO 32×32     | cuadrado    | [ ] generar             | Derivado de `arterix-mark.svg`, fondo `#050810`.            |
 | 1.5 | `og-image.jpg`                | JPG 1200×630  | horizontal  | [ ] generar             | Imagen para redes sociales / preview. Isotipo azul cobalto sobre negro profundo. |
 
 ---
@@ -54,13 +54,13 @@ Este leg **no necesita clip de video generado**. El scroll dibuja SVG en vivo (v
 |---|-------------------------------|----------------|---------------------|-----------|----------------------------------------------------------------------------------------------------|
 | 2.4.1 | `legs/leg4-bg.webp`         | WebP           | 1920×1080 horizontal| [ ] generar | Fondo negro profundo con un halo suave azul cobalto centrado. La web viva se compone encima con HTML/SVG real. |
 | 2.4.2 | `legs/leg4-bg-m.webp`       | WebP           | 1080×1920 vertical  | [ ] generar | Versión vertical del fondo.                                                                        |
-| 2.4.3 | `mockup/livesite.html`        | Fragmento HTML | —                   | [ ] armar con HTML/SVG in-page | Mini-site mockup: header con `TU MARCA`, hero con titular fake genérico ("Tu negocio en internet, con carácter"), tres tarjetas de servicios sin cifras, botón CTA azul cobalto. Todo con la paleta y las fuentes del design system real, para que se vea coherente con el sitio de GROWTHMARK. |
+| 2.4.3 | `mockup/livesite.html`        | Fragmento HTML | —                   | [ ] armar con HTML/SVG in-page | Mini-site mockup: header con `TU MARCA`, hero con titular fake genérico ("Tu negocio en internet, con carácter"), tres tarjetas de servicios sin cifras, botón CTA azul cobalto. Todo con la paleta y las fuentes del design system real, para que se vea coherente con el sitio de ARTERIX. |
 
 ### Leg 5 — Prueba
 
 | # | Ruta                          | Formato        | Orientación         | Estado    | Descripción                                                                                       |
 |---|-------------------------------|----------------|---------------------|-----------|----------------------------------------------------------------------------------------------------|
-| 2.5.1 | `legs/leg5.mp4`             | MP4 H.264 GOP 8 | 1920×1080 horizontal| [ ] generar | 4-5s. Cámara se aleja del laptop del peak. Se revelan 4-5 pantallas más flotando en el espacio, todas encendidas con contenido diferente (todas con la paleta GROWTHMARK). Sin números inventados en las pantallas. |
+| 2.5.1 | `legs/leg5.mp4`             | MP4 H.264 GOP 8 | 1920×1080 horizontal| [ ] generar | 4-5s. Cámara se aleja del laptop del peak. Se revelan 4-5 pantallas más flotando en el espacio, todas encendidas con contenido diferente (todas con la paleta ARTERIX). Sin números inventados en las pantallas. |
 | 2.5.2 | `legs/leg5-m.mp4`           | MP4 H.264 GOP 4 | 1080×1920 vertical  | [ ] generar | Versión vertical: 3 pantallas apiladas en lugar de 5 horizontales.                                 |
 | 2.5.3 | `legs/leg5.webp`            | WebP           | 1920×1080 horizontal| [ ] extraer | Poster.                                                                                            |
 
@@ -133,16 +133,16 @@ Reglas:
 ## Ubicación relativa desde la raíz del proyecto
 
 ```
-sitio-growthmark-prueba/
+sitio-arterix-prueba/
 ├── design.md
 ├── assets/
 │   ├── README.md          ← este archivo
 │   ├── favicon.ico
 │   ├── og-image.jpg
 │   ├── logo/
-│   │   ├── growthmark.svg
-│   │   ├── growthmark-mark.svg
-│   │   └── growthmark-wordmark.svg
+│   │   ├── arterix.svg
+│   │   ├── arterix-mark.svg
+│   │   └── arterix-wordmark.svg
 │   ├── legs/
 │   │   ├── leg1.mp4 · leg1-m.mp4 · leg1.webp
 │   │   ├── leg2.mp4 · leg2-m.mp4 · leg2.webp

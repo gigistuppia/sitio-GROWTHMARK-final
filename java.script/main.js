@@ -1,5 +1,5 @@
 /* ============================================
-   GROWTHMARK — Main JavaScript
+   ARTERIX — Main JavaScript
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {

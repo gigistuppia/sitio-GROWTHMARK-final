@@ -4,8 +4,10 @@ Disallow: /lucianomattica-design/
 Disallow: /scrollcraft/
 Disallow: /assets/
 Disallow: /design.md
+Disallow: /specs/
+Disallow: /informes/
 Disallow: /img/files.zip
 Disallow: /img/ChatGPT*
 Disallow: /img/WhatsApp*
 
-Sitemap: https://sitio-growthmark-final.vercel.app/sitemap.xml
+Sitemap: https://arterix.vercel.app/sitemap.xml

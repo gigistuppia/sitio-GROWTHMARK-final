@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://sitio-growthmark-final.vercel.app/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://arterix.vercel.app/</loc>
+    <lastmod>2026-10-25</lastmod>
     <image:image>
-      <image:loc>https://sitio-growthmark-final.vercel.app/img/og-image.png</image:loc>
-      <image:title>ARTERIX: diseño web e integración CRM Tokko en Escobar</image:title>
+      <image:loc>https://arterix.vercel.app/img/og-image.png</image:loc>
+      <image:title>ARTERIX: agencia de sitios web y soluciones digitales en Escobar</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://sitio-growthmark-final.vercel.app/privacidad.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://arterix.vercel.app/diseno-web-escobar</loc>
+    <lastmod>2026-10-25</lastmod>
   </url>
   <url>
-    <loc>https://sitio-growthmark-final.vercel.app/terminos.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <loc>https://arterix.vercel.app/integracion-crm-tokko</loc>
+    <lastmod>2026-10-25</lastmod>
   </url>
 </urlset>

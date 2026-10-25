@@ -1,144 +1,103 @@
-# Informe SEO — ARTERIX (sitio-growthmark-final.vercel.app)
+# Informe SEO — ARTERIX (arterix.vercel.app)
 
-Fecha: 2026-10-12. Modo: diagnóstico + aplicar.
-Alcance: `index.html` (página única), `robots.txt`, `sitemap.xml`, `css/sales.css` (un bloque), `img/`.
+Fecha: 2026-10-25. Modo: diagnóstico + aplicar. Segundo pase: reenfoque de "CRM Tokko" a marca + agencia de sitios web + soluciones digitales + CRM.
 
-Limitaciones: no hay Search Console ni Analytics. La cuota diaria de PageSpeed Insights estaba agotada (error 429), así que no hay mediciones de rendimiento. Todo lo de demanda y competencia es "estimado, no medido".
+Limitaciones: sin Search Console ni Analytics. Demanda y competencia son "estimado, no medido". No se midió rendimiento (PageSpeed no consultado en este pase).
 
 ## Puntaje
 
-| Área | Antes | Después | Qué falta para subir |
-|---|---|---|---|
-| 1. Indexación y técnico | 1 | 1 | Dominio propio y alta en Search Console |
-| 2. On-page | 1 | 2 | — |
-| 3. SEO local | 0 | 1 | Google Business Profile, redes, horarios |
-| 4. Contenido e intención | 1 | 1 | Páginas por servicio |
-| 5. Rendimiento visto por Google | 1 | 1 | Medir con PageSpeed y optimizar fuentes |
-| 6. Visibilidad en IA | 1 | 2 | Redes reales y menciones externas |
-| **Total /12** | **5** | **8** | |
+| Área | Pase 1 (inicio) | Antes de este pase | Ahora | Qué falta |
+|---|---|---|---|---|
+| 1. Indexación y técnico | 1 | 1 | 1 | Dominio propio, Search Console, confirmar indexación |
+| 2. On-page | 1 | 2 | 2 | — |
+| 3. SEO local | 0 | 1 | 1 | Google Business Profile, redes (`sameAs`), horarios |
+| 4. Contenido e intención | 1 | 1 | 2 | Portfolio/casos reales, más contenido por servicio |
+| 5. Rendimiento visto por Google | 1 | 1 | 1 | Medir; loader de pantalla completa y efectos del hero |
+| 6. Visibilidad en IA | 1 | 2 | 2 | Redes y menciones externas |
+| **Total /12** | 5 | 8 | **9** | |
 
-### Hallazgos principales (antes)
+## Hallazgos de este pase (antes de aplicar)
 
-1. **Técnico.**
-   - `robots.txt` y `sitemap.xml` apuntaban a `growthmark.vercel.app`. Es otro proyecto: sirve una app de Vite "GrowthMark — Asset Engine". El sitemap le decía a Google que el sitio estaba en un dominio ajeno al canonical.
-   - `site:sitio-growthmark-final.vercel.app` no devolvió ninguna página, así que probablemente no está indexado (estimado: el buscador de la herramienta no es Google).
-   - `design.md`, `img/files.zip`, `lucianomattica-design/` y `assets/` estaban públicos en el deploy (respondían 200).
-   - `lang="es"` genérico. Sin `theme-color`, sin apple-touch-icon y con un favicon de 244 KB.
-   - Contenido `.reveal` en opacidad 0 hasta que corre JS, sin fallback `noscript`.
-2. **On-page.**
-   - El title tenía "Buenos Aires" pero no la zona real. La meta description no tenía CTA. Había `meta keywords` (Google la ignora).
-   - El H1 es "Tu web puede vender más", sin palabra clave. Las etiquetas de sección eran genéricas ("Qué incluye", "Proceso").
-   - Imágenes con alt "ARTERIX" repetido, incluido el logo del loader, y sin `width`/`height`.
-   - `og:image` era el wordmark blanco transparente de 831x300, que se ve mal en WhatsApp, LinkedIn y X.
-3. **Local.**
-   - El teléfono y la dirección no estaban en texto visible en ninguna parte (solo en schema y en el link de WhatsApp).
-   - `sameAs: []` vacío y `priceRange: "$$"` sin respaldo.
-   - Sin `contactPoint`.
-   - Zona declarada solo como "Buenos Aires".
-4. **Contenido.** Todo en una URL. No hay una página que responda por separado "diseño web en Escobar" ni "integración CRM Tokko". La FAQ cubría Tokko con 2 preguntas.
-5. **Rendimiento.**
-   - Se cargan 6 pesos de Plus Jakarta Sans y 4 de Space Grotesk.
-   - Hay efectos pesados en el hero: aurora, 3 capas de estrellas, orbes y cursor propio.
-   - Las imágenes no tenían dimensiones, lo que provoca saltos de layout.
-   - No medido.
-6. **IA.** Faltaba una frase citable que junte nombre + rubro + zona + servicio. El schema no tenía `logo`, `contactPoint` ni `knowsAbout`.
-
-### Competencia (estimado, no medido)
-
-- "Diseño web Escobar": no aparecen agencias con base en Escobar. Salen perfiles de personas y rankings de Buenos Aires (DesignRush). La competencia local directa es baja.
-- "Integración CRM Tokko": casi no hay integradores que lo ofrezcan de forma explícita. Aparecen portfolios sueltos (por ejemplo un caso de integración Tokko Broker de una agencia partner) y consultoras de otros CRM (Kommo, Creatio). Hay una oportunidad clara de nicho, pero hoy ARTERIX no tiene una página dedicada para capturarla.
-- Qué tienen otros que ARTERIX no tiene: casos o portfolio, perfil de empresa en Google, reseñas, y páginas por servicio.
+1. **Enfoque equivocado para lo que se quiere rankear.** Title, H1-eyebrow, meta y schema giraban en torno a "CRM Tokko". Ninguna página hablaba de "agencia de sitios web", "soluciones digitales" ni "zona norte". La marca ARTERIX no estaba en el H1 ni al inicio del title.
+2. **Una sola URL para todo.** La home competía por diseño web y por CRM. Sin páginas de servicio.
+3. **H1 sin palabra clave** ("Tu web puede vender más").
+4. **Contradicción en el sitemap:** `privacidad` y `terminos` están en `noindex` pero estaban listados en `sitemap.xml`.
+5. **Marca y dominio.** No existe ninguna agencia ARTERIX de diseño web en los resultados. Sí existe una "Arterix" registrada en CABA (servicios para espectáculos, rubro distinto) y nombres parecidos como "Arteixo" o "Arteria", que confunden la búsqueda. La URL `arterix.vercel.app` no contiene "arterix" y sí contiene la marca correcta.
+6. **Indexación.** `site:` no devolvió nada (estimado: probablemente no indexado, el buscador de la herramienta no es Google).
+7. **Competencia (estimado, no medido).** Para "agencia web Escobar" y "diseño web zona norte" no aparecen agencias locales claras: salen perfiles de otros países y directorios genéricos. La competencia local directa es baja. En "agencia de sitios web" a secas la competencia es alta (directorios y agencias grandes de Buenos Aires), así que el foco realista es Escobar, zona norte y la marca.
+8. **OG image** decía "Diseño web e integración CRM Tokko".
 
 ## Cambios aplicados
 
-### `index.html` (head)
-- `lang="es-AR"` y `theme-color`.
-- Title (55 caracteres): "Diseño web e integración CRM Tokko en Escobar | ARTERIX".
-- Meta description (151 caracteres): servicio + zona + CTA ("Escribinos por WhatsApp").
-- Se eliminó `meta keywords`.
-- Robots con `max-snippet:-1`. Se agregó hreflang `es-AR` y `x-default`.
-- Open Graph y Twitter reescritos, con `og:image` nuevo de 1200x630 (`img/og-image.png`, creado), más tipo, dimensiones y alt.
-- Favicons optimizados (32 px y 192 px) y apple-touch-icon (180 px), generados desde `navicon.png`.
-- `<noscript>` que muestra el contenido si JS no corre.
+### `index.html` (home: marca + agencia + soluciones digitales + zona norte)
+- **Title (55):** "ARTERIX | Agencia de diseño web en Escobar y zona norte". Marca al inicio.
+- **Meta description (151):** "ARTERIX es una agencia de sitios web y soluciones digitales en Escobar y zona norte: diseño web a medida, integración CRM y automatización. Escribinos."
+- OG y Twitter con el mismo enfoque. `application-name` agregado.
+- **H1:** el eyebrow del hero pasó a ser el único H1: "ARTERIX · Agencia de sitios web en Escobar y zona norte" (mismo aspecto visual). El titular grande "Tu web puede vender más" pasó a `<p class="hero-headline">` con el mismo estilo. No se tocó el diseño ni la animación.
+- Bajada del hero con "agencia de sitios web y soluciones digitales en Escobar", con enlace a la página de CRM.
+- Nosotros: frase citable "ARTERIX es una agencia web con base en Escobar (El Naudir)... para negocios de Escobar y de la zona norte", con enlaces a las dos páginas de servicio.
+- Etiqueta de sección: "Soluciones digitales: diseño web, CRM y automatización". Dos botones a las páginas nuevas bajo el bento. El CTA de CRM ahora lleva a la página dedicada.
+- Menú: "Diseño web" y "CRM Tokko" apuntan a las páginas nuevas (se sacó "Proceso" del menú, sigue en el footer).
+- Footer: descripción nueva y enlaces a las páginas de servicio. Links legales sin `.html`.
+- `<main>` agregado.
+- **FAQ de 11 a 13 preguntas**, con "¿Qué es ARTERIX?" y "¿Qué son las soluciones digitales y qué incluyen?" al principio; la de zonas ahora menciona zona norte.
+- **Schema (`@graph`, 4 nodos):** `WebSite` con `alternateName`, `WebPage`, `ProfessionalService` (areaServed con zona norte, `knowsAbout` ampliado, servicios con `url` a las páginas nuevas) y `FAQPage`. Las 13 preguntas son idénticas al texto visible (verificado por script).
 
-### `index.html` (body)
-- **Hero:** el eyebrow ahora dice "Diseño web y CRM Tokko en Escobar". La bajada menciona CRM Tokko. El CTA es "Ver servicios de diseño web". El H1 se mantiene (un solo H1).
-- **Nosotros:** párrafo nuevo con la frase citable: "ARTERIX es una agencia con base en Escobar (El Naudir), Buenos Aires, especializada en diseño web a medida e integración y personalización del CRM Tokko para negocios e inmobiliarias de AMBA."
-- **Etiquetas de sección con palabra clave:** "Servicios de diseño web", "Proceso de trabajo", "Integración CRM Tokko y automatización", "Preguntas sobre diseño web y CRM Tokko". Los H2 creativos no se tocaron.
-- **Sección CRM:** se agregaron 2 bloques (qué hacemos con Tokko y quiénes lo usan) con el mismo componente `why-grid` ya existente. El CTA ahora es "Consultar por integración CRM Tokko".
-- **FAQ:** de 7 a 11 preguntas, con las nuevas:
-  - ¿Dónde está ARTERIX y en qué zonas trabajan?
-  - ¿Ya uso Tokko, pueden personalizarlo?
-  - ¿Qué es la automatización de procesos?
-  - ¿Cuánto sale un sitio web o una integración con Tokko? (sin cifras)
-- **Imágenes:** alt descriptivo en el logo del header, alt vacío en el loader (decorativo), `width`/`height` en todas, y `loading="lazy"` en el logo del footer.
-- **Enlaces y navegación:**
-  - `rel="noopener"` en todos los `target="_blank"`.
-  - El menú dice "CRM Tokko". `aria-controls` en el hamburguesa.
-  - Footer con anclas descriptivas, que ahora incluye el enlace a CRM y no repite 4 veces `#incluye`.
-  - Email como `mailto:` (antes abría Gmail compose).
-  - Sin anclas rotas.
-- **NAP visible en el footer:** "Escobar (El Naudir), Buenos Aires, Argentina", teléfono `+54 11 3458-3302` y email, consistentes con el schema.
-- Copyright actualizado a 2026.
-- **Schema:** los 2 bloques JSON-LD se unificaron en un `@graph`: `WebSite`, `WebPage`, `ProfessionalService` y `FAQPage` (las 11 preguntas, idénticas al texto visible). Mejoras en el negocio:
-  - `logo`, `contactPoint` (WhatsApp/email), `knowsAbout`.
-  - `areaServed` con Escobar, El Naudir y AMBA.
-  - 3 servicios con `provider` y `areaServed`.
-  - Se quitó `priceRange` (dato sin respaldo) y `sameAs` vacío.
-  - Todo validado como JSON parseable.
-- La FAQ con schema ya no genera resultado enriquecido en Google para sitios comerciales. Se mantiene por la lectura de buscadores con IA, no por el rich result.
+### Páginas nuevas (contenido propio, un H1 con la búsqueda principal)
+- `diseno-web-escobar.html` — "Diseño de sitios web en Escobar y zona norte | ARTERIX" (54). Meta 147. H1 "Diseño de sitios web en Escobar." Secciones: servicio, qué incluye, proceso, zona de trabajo, 7 preguntas propias. Schema: `WebPage`, `BreadcrumbList`, `Service`, `FAQPage`.
+- `integracion-crm-tokko.html` — "Integración CRM Tokko en Escobar y zona norte | ARTERIX" (55). Meta 147. H1 "Integración CRM Tokko." Secciones: qué es integrar un CRM, qué hacemos con Tokko, automatización (ancla `#automatizacion`), proceso, aviso de marca ("Tokko y Tokko Broker son marcas de sus respectivos titulares"), 7 preguntas propias. Mismo schema.
+- Mismos componentes, CSS y JS que la home. Se agregó un bloque `.prose` al final de `css/sales.css` (v=6) para los textos largos. Sin errores de JS en las tres páginas (probado en Chrome, escritorio y móvil).
+- No se crearon páginas por barrio ni por localidad (serían doorway pages). La zona se menciona en texto dentro de la página de diseño web.
 
 ### Otros archivos
-- `robots.txt`: sitemap con el dominio correcto. Se bloquean `lucianomattica-design`, `scrollcraft`, `assets`, `design.md`, `files.zip` e imágenes sin uso.
-- `sitemap.xml`: dominio correcto, `lastmod` 2026-10-12, imagen incluida.
-- `.vercelignore` (nuevo): evita subir material interno (design.md, plugin, zip, imágenes sin uso). Ojo: solo aplica a deploys por CLI. Si el deploy es por Git, esos archivos siguen públicos; para eso, sacarlos del repo o moverlos fuera de la raíz. Robots no los desindexa, solo pide que no se rastreen.
-- `css/sales.css` (v=4): una regla `.footer-nap` para el texto de dirección. No se tocó diseño.
+- `sitemap.xml`: home + las 2 páginas nuevas, `lastmod` 2026-10-25. Se sacaron `privacidad` y `terminos` (están en `noindex`).
+- `robots.txt`: sin cambios necesarios (apunta al sitemap correcto).
+- `img/og-image.png`: regenerada ("Agencia de sitios web y soluciones digitales / Escobar · Zona norte · Buenos Aires").
+- `vercel.json` ya tenía `cleanUrls`, por eso las páginas se sirven sin `.html`.
+
+## Verificación
+- 3 páginas indexables, 1 H1 cada una, titles de 54 a 55 caracteres, metas de 147 a 151, anclas internas sin rotos, JSON-LD parseable y FAQ idéntica al schema.
+- Pendiente después de subir: Rich Results Test, inspección de URL en Search Console, vista previa de OG en WhatsApp, PageSpeed.
 
 ## Plan priorizado
 
-### Lo arreglo yo con `/arterix-seo aplicar`
+### Requiere acción de Gigi o del cliente (lo de mayor impacto está acá)
 
 | Acción | Impacto | Esfuerzo | Dónde |
 |---|---|---|---|
-| Crear páginas `/integracion-crm-tokko` y `/diseno-web-escobar` (texto propio, FAQ propia, un H1 con la búsqueda principal) y enlazarlas desde el menú. Hoy una sola URL compite por dos búsquedas | Alto | Medio | Contenido nuevo |
-| Cuando exista dominio propio: cambiar canonical, OG, sitemap, robots y schema (se reemplaza `sitio-growthmark-final.vercel.app` en 5 archivos/lugares) | Alto | Bajo | Sitio |
-| Optimizar fuentes (reducir de 10 pesos a 5 o 6) y `font-display` ya está en swap; medir con PageSpeed cuando haya cuota | Medio | Bajo | Sitio |
-| Páginas de privacidad y términos (el footer tiene 2 links `href="#"` que no llevan a ningún lado) | Medio | Medio | Contenido nuevo (requiere texto legal) |
-| Pasar `/arterix-tecnico` para medir peso y CLS reales | Medio | Bajo | Sitio |
+| Dominio propio (arterix.com.ar). Como paso rápido, agregar en Vercel el dominio `arterix.vercel.app` si está libre. Después reemplazar `arterix.vercel.app` en: `index.html`, las 2 páginas nuevas, `sitemap.xml`, `robots.txt` (el reemplazo lo hago yo con `/arterix-seo aplicar`) | Alto | Bajo | Vercel / NIC.ar |
+| Alta en Google Search Console: verificar el sitio, enviar `sitemap.xml` y pedir indexación de las 3 URLs. Sin esto la home puede tardar semanas en aparecer | Alto | Bajo | Search Console |
+| Google Business Profile como negocio de servicio (área: Escobar y zona norte, sin mostrar dirección si es domicilio). Categoría principal: "Diseñador de sitios web" o "Agencia de diseño web". Nombre exactamente "ARTERIX", teléfono, sitio, fotos y reseñas. Es lo que más ayuda para "ARTERIX" y "agencia web Escobar" | Alto | Medio | GBP |
+| Perfiles de marca con el nombre "ARTERIX": Instagram, LinkedIn, Facebook. Luego agregar `sameAs` al schema. Ayuda a que Google asocie la marca con el sitio | Alto | Bajo | Redes |
+| Casos o portfolio reales de clientes (no hay prueba social y no se inventó) | Alto | Medio | Gigi |
+| Perfil en directorios (Clutch/DesignRush, Páginas Amarillas, Cámara de Comercio de Escobar) con el mismo nombre, teléfono y zona | Medio | Bajo | Externo |
+| Confirmar [A CONFIRMAR] del brief (zonas, partner Tokko, horarios) | Medio | Bajo | Gigi |
+| Verificar que `wa.me/541134583302` abra el chat (en Argentina los móviles suelen usar `549`) | Medio | Bajo | Gigi |
 
-### Requiere acción de Gigi o del cliente
+### Lo arreglo yo con `/arterix-seo aplicar` o `/arterix-tecnico`
 
-| Acción | Impacto | Esfuerzo | Dónde |
-|---|---|---|---|
-| Comprar y conectar un dominio propio (ej. arterix.com.ar). Una URL `*.vercel.app` rankea peor, no da confianza y no se puede mover sin perder historial | Alto | Bajo | Gigi (Vercel + NIC.ar) |
-| Crear y verificar Google Business Profile como negocio de servicio (área de servicio Escobar/AMBA, sin mostrar dirección si es en casa). Categoría principal: "Diseñador de sitios web" o "Agencia de diseño web". Fotos y pedir reseñas | Alto | Medio | GBP |
-| Dar de alta el sitio en Google Search Console y enviar el sitemap; chequear indexación | Alto | Bajo | Gigi |
-| Perfiles en redes (Instagram/LinkedIn) y agregarlos a `sameAs` | Medio | Bajo | Gigi |
-| Casos o portfolio reales de clientes y sitios hechos (hoy no hay prueba social; no se inventó ninguno) | Alto | Medio | Gigi |
-| Confirmar si ARTERIX es partner o proveedor oficial de Tokko. De ser así, decirlo en el sitio; si no, mantener la redacción actual ("implementamos y personalizamos") | Medio | Bajo | Gigi |
-| Verificar que `wa.me/541134583302` abra el chat (los móviles argentinos suelen usar `549`; si no abre, cambiar en todos los links) | Medio | Bajo | Gigi |
-
-## [A CONFIRMAR]
-
-- Dirección o área de servicio exacta para schema (hoy solo localidad: Escobar) y para el Google Business Profile.
-- Horarios de atención (`openingHoursSpecification` no se agregó).
-- Coordenadas `geo`: las que estaban (-34.3486, -58.7947) parecen del centro de Escobar, no del negocio. Revisar si El Naudir queda en otro punto.
-- Plazo de entrega y forma de cotizar: la FAQ dice "te pasamos un presupuesto claro" y "plazo claro en la reunión de diagnóstico". Confirmar que es lo que se promete.
-- La FAQ nueva dice que trabajan con "el norte del conurbano y el resto de AMBA". Confirmar que atienden fuera de Escobar.
-- Si las inmobiliarias son el cliente objetivo real (hoy el copy habla de "negocios e inmobiliarias").
+| Acción | Impacto | Esfuerzo |
+|---|---|---|
+| Reemplazar el dominio en todo el sitio cuando exista | Alto | Bajo |
+| Agregar `sameAs`, horarios y geo correcto cuando haya datos | Medio | Bajo |
+| Medir con PageSpeed y optimizar: loader de pantalla completa (tapa el contenido ~1-2 s, puede afectar LCP), 10 pesos de fuentes, efectos del hero | Medio | Medio |
+| Contenido nuevo cuando haya casos: página de portfolio y notas (por ejemplo "cuánto cuesta una página web en Argentina") | Medio | Medio |
 
 ## Búsquedas objetivo (estimado, no medido)
 
-| Búsqueda | Intención | Demanda | Página hoy | Página recomendada |
+| Búsqueda | Intención | Demanda | Competencia local | Página |
 |---|---|---|---|---|
-| integración CRM Tokko | Comparación / servicio | Baja (nicho) pero casi sin competencia | Home, sección CRM | `/integracion-crm-tokko` |
-| personalizar Tokko CRM / automatización Tokko | Servicio | Baja | Home, sección CRM | misma |
-| diseño web Escobar | Servicio local | Baja a media | Home | `/diseno-web-escobar` |
-| agencia de diseño web zona norte / Buenos Aires | Comparación | Media, competencia alta | Home | Home |
-| diseño web para inmobiliarias | Servicio / vertical | Media | No cubierto | Dentro de la página de CRM o página propia |
+| ARTERIX | Marca | Muy baja hoy | Baja, pero hay nombres parecidos | `/` |
+| agencia de sitios web / agencia web Escobar | Comparación | Media / baja | Alta a nivel nacional, baja en Escobar | `/` |
+| soluciones digitales Escobar | Servicio | Baja | Baja | `/` |
+| agencia digital zona norte Buenos Aires | Comparación | Baja a media | Media | `/` |
+| diseño de sitios web en Escobar | Servicio local | Baja a media | Baja | `/diseno-web-escobar` |
+| diseño web zona norte | Servicio local | Media | Media | `/diseno-web-escobar` |
+| integración CRM Tokko / CRM Tokko | Servicio nicho | Baja | Muy baja | `/integracion-crm-tokko` |
+| integración CRM | Servicio | Media | Alta (Kommo, HubSpot, etc.) | `/integracion-crm-tokko` (difícil sin dominio y autoridad) |
 
-## Verificación
-
-- JSON-LD: 4 nodos, parseables.
-- Un solo H1 y 9 H2. Todas las anclas internas existen. Todas las imágenes tienen alt.
-- Pendiente después de subir: probar en el Rich Results Test, el inspector de URL de Search Console, la vista previa de OG (WhatsApp/LinkedIn) y PageSpeed Insights.
+## [A CONFIRMAR]
+- Las páginas nombran Belén de Escobar, Garín, Ingeniero Maschwitz, Matheu, Pilar y Tigre como zonas de trabajo. Confirmar o ajustar el texto en `diseno-web-escobar.html`.
+- Aviso de marca Tokko: confirmar si son partner oficial; si lo son, se puede decir y mejora la confianza.
+- Dirección o área de servicio exacta, horarios y coordenadas `geo` (las actuales parecen del centro de Escobar).
+- Plazos y forma de cotizar (las FAQ dicen "presupuesto claro" y "plazo en la reunión de diagnóstico").

@@ -1,7 +1,7 @@
 /* Figura 3D del hero (Three.js) — red de nodos con forma de estrella de
    5 puntas (tipo Patricio Estrella) con volumen, que muta cada 5s entre
    la estrella y un triángulo/pirámide con la silueta del isologo de
-   GROWTHMARK (incluyendo la muesca inferior izquierda), con muchas
+   ARTERIX (incluyendo la muesca inferior izquierda), con muchas
    líneas conectadas.
 
    Carga como <script> clásico (no module) porque type="module" se bloquea
@@ -29,7 +29,7 @@ function init() {
     return pts;
   }
 
-  // Silueta del isologo GROWTHMARK (medida sobre el PNG real): ápice arriba,
+  // Silueta del isologo ARTERIX (medida sobre el PNG real): ápice arriba,
   // pata derecha que baja entera hasta la base, muesca interior tipo "A" y
   // pata izquierda más corta que termina en punta antes de llegar a la base.
   function logoRing(z) {

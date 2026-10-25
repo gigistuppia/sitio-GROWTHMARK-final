@@ -1,4 +1,4 @@
-# design.md — Landing GROWTHMARK
+# design.md — Landing ARTERIX
 
 > Documento único de diseño. Fuente de verdad antes de escribir una línea de código.
 > Estructura: worldflight (una sola cámara volando por un único mundo, sin cortes).
@@ -12,7 +12,7 @@
 
 **Dolor.** Su negocio no tiene representación digital seria, o la que tiene no le trae clientes. Siente que "existe menos" que la competencia que sí está online. Cuando alguien lo busca, no lo encuentra o encuentra algo que no lo representa. Cada mes que pasa sin sitio es un mes de clientes que fueron a otro lado.
 
-**Promesa.** GROWTHMARK diseña, publica y deja lista una herramienta digital que representa fielmente su negocio y trabaja para atraerle más clientes — dominio, hosting y todo listo para subir a la web.
+**Promesa.** ARTERIX diseña, publica y deja lista una herramienta digital que representa fielmente su negocio y trabaja para atraerle más clientes — dominio, hosting y todo listo para subir a la web.
 
 ---
 
@@ -72,7 +72,7 @@ Una idea de movimiento única que no existe en ningún otro sitio.
 
 **Qué es.** Durante los legs 3 y 4, el scroll **dibuja**. Cada elemento del wireframe/mockup se traza con SVG real: `stroke-dasharray` + `stroke-dashoffset` controlados por el progreso del scroll (`--sc-p`). Header → hero → tarjetas → botón, uno tras otro, al ritmo del gesto del visitante.
 
-**Por qué acá y no en otro lado.** GROWTHMARK es una agencia de diseño web. El signature literalmente muestra el oficio: *diseñamos delante tuyo*. No es un truco visual sin razón — es la promesa hecha animación.
+**Por qué acá y no en otro lado.** ARTERIX es una agencia de diseño web. El signature literalmente muestra el oficio: *diseñamos delante tuyo*. No es un truco visual sin razón — es la promesa hecha animación.
 
 **Cómo se implementa (nota técnica).**
 - SVG in-page con paths reales del wireframe.
@@ -267,13 +267,13 @@ Mobile no es "la misma landing más chica". Es una composición propia.
 
 ## 11. Assets — resumen (ver `assets/README.md` para detalle)
 
-Lo único que el usuario tiene: **logo de GROWTHMARK**. Todo lo demás hay que generar o dibujar.
+Lo único que el usuario tiene: **logo de ARTERIX**. Todo lo demás hay que generar o dibujar.
 
 Categorías:
 - **Legs del worldflight** (6 clips + 6 posters + 6 versiones mobile).
 - **Signature (Live Wireframe):** paths SVG hechos in-page — no requieren generación externa.
 - **CTA final:** background estático + ícono WhatsApp SVG in-page.
-- **Logo:** provisto por el usuario, ubicación destino `assets/logo/growthmark.svg`.
+- **Logo:** provisto por el usuario, ubicación destino `assets/logo/arterix.svg`.
 - **Favicon / OG image:** generar al final.
 
 La lista completa con nombre exacto de archivo, formato (JPG / WebP / PNG con alpha / SVG), orientación y leg destino está en `assets/README.md`.
@@ -307,6 +307,6 @@ Marcados en el documento como *(pendiente)* para no inventar:
 - [x] Mobile con art direction propia, no shrink.
 - [x] Lista de assets a producir en `assets/README.md`.
 - [ ] Link real de WhatsApp *(el usuario lo cargará después).*
-- [ ] Logo colocado en `assets/logo/growthmark.svg` *(el usuario lo cargará después).*
+- [ ] Logo colocado en `assets/logo/arterix.svg` *(el usuario lo cargará después).*
 
 Cuando estos dos últimos cierren, el gate para escribir código está abierto.

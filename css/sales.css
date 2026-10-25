@@ -1,5 +1,5 @@
 /* ============================================
-   GROWTHMARK — Carta de venta (secciones extra)
+   ARTERIX — Carta de venta (secciones extra)
    Reusa variables/patrones de styles.css.
    Hero rediseñado según el flyer azul de marca.
    ============================================ */
@@ -561,3 +561,25 @@ a, button, summary, label,
   color: var(--text2);
   margin-bottom: 12px;
 }
+
+/* SEO: el eyebrow del hero pasa a ser el H1 (marca + rubro + zona), mantiene el aspecto anterior */
+h1.hero-eyebrow { font-weight: 400; line-height: 1.7; }
+@media (max-width: 767px) {
+  .hero-eyebrow { letter-spacing: 3px; font-size: 11px; }
+}
+.hero-sub a.hl-blue { text-decoration: underline; text-decoration-color: rgba(255,255,255,0.35); text-underline-offset: 4px; }
+.about-body a { color: inherit; text-decoration: underline; text-decoration-color: rgba(255,255,255,0.3); text-underline-offset: 4px; }
+.about-body a:hover { text-decoration-color: var(--accent1); }
+
+/* SEO: páginas de servicio (diseno-web-escobar, integracion-crm-tokko) */
+.prose-section { padding: 88px 60px; position: relative; }
+.prose { max-width: 800px; margin: 0 auto; }
+.prose p { font-size: 17px; font-weight: 300; line-height: 1.85; color: var(--text2); margin-bottom: 24px; }
+.prose strong { color: var(--text); font-weight: 500; }
+.prose a { color: var(--text); text-decoration: underline; text-decoration-color: rgba(255,255,255,0.3); text-underline-offset: 4px; }
+.prose a:hover { text-decoration-color: var(--accent1); }
+.prose ul { list-style: none; margin: 0 0 24px; padding: 0; }
+.prose li { font-size: 17px; font-weight: 300; line-height: 1.7; color: var(--text2); padding: 12px 0; border-bottom: 1px solid var(--border); }
+.prose li strong { display: block; margin-bottom: 4px; }
+.link-row { max-width: 1100px; margin: 48px auto 0; display: flex; flex-wrap: wrap; gap: 16px; }
+@media (max-width: 767px) { .prose-section { padding: 64px 24px; } }
