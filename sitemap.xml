@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://arterix.vercel.app/</loc>
+    <loc>https://sitio-arterix-final.vercel.app/</loc>
     <lastmod>2026-10-25</lastmod>
     <image:image>
-      <image:loc>https://arterix.vercel.app/img/og-image.png</image:loc>
+      <image:loc>https://sitio-arterix-final.vercel.app/img/og-image.png</image:loc>
       <image:title>ARTERIX: agencia de sitios web y soluciones digitales en Escobar</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://arterix.vercel.app/diseno-web-escobar</loc>
+    <loc>https://sitio-arterix-final.vercel.app/diseno-web-escobar</loc>
     <lastmod>2026-10-25</lastmod>
   </url>
   <url>
-    <loc>https://arterix.vercel.app/integracion-crm-tokko</loc>
+    <loc>https://sitio-arterix-final.vercel.app/integracion-crm-tokko</loc>
     <lastmod>2026-10-25</lastmod>
   </url>
 </urlset>

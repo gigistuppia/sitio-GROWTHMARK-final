@@ -10,4 +10,4 @@ Disallow: /img/files.zip
 Disallow: /img/ChatGPT*
 Disallow: /img/WhatsApp*
 
-Sitemap: https://arterix.vercel.app/sitemap.xml
+Sitemap: https://sitio-arterix-final.vercel.app/sitemap.xml

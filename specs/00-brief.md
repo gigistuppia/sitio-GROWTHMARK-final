@@ -8,7 +8,7 @@ Actualizado: 2026-10-25. Reenfoque SEO: de "CRM Tokko" a agencia de sitios web y
 - Base: Escobar (El Naudir), provincia de Buenos Aires, Argentina
 - Zona de trabajo declarada en el sitio: Escobar, zona norte del Gran Buenos Aires y resto de AMBA
 - Contacto: franconicolasferrari@gmail.com / +54 11 3458-3302 (WhatsApp: wa.me/541134583302)
-- URL actual: https://arterix.vercel.app/ (sin dominio propio todavía)
+- URL actual: https://sitio-arterix-final.vercel.app/ (sin dominio propio todavía)
 - Conversión: WhatsApp con mensaje precargado
 
 ## Objetivo de posicionamiento

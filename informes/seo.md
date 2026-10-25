@@ -1,4 +1,4 @@
-# Informe SEO — ARTERIX (arterix.vercel.app)
+# Informe SEO — ARTERIX (sitio-arterix-final.vercel.app)
 
 Fecha: 2026-10-25. Modo: diagnóstico + aplicar. Segundo pase: reenfoque de "CRM Tokko" a marca + agencia de sitios web + soluciones digitales + CRM.
 
@@ -22,7 +22,7 @@ Limitaciones: sin Search Console ni Analytics. Demanda y competencia son "estima
 2. **Una sola URL para todo.** La home competía por diseño web y por CRM. Sin páginas de servicio.
 3. **H1 sin palabra clave** ("Tu web puede vender más").
 4. **Contradicción en el sitemap:** `privacidad` y `terminos` están en `noindex` pero estaban listados en `sitemap.xml`.
-5. **Marca y dominio.** No existe ninguna agencia ARTERIX de diseño web en los resultados. Sí existe una "Arterix" registrada en CABA (servicios para espectáculos, rubro distinto) y nombres parecidos como "Arteixo" o "Arteria", que confunden la búsqueda. La URL `arterix.vercel.app` no contiene "arterix" y sí contiene la marca correcta.
+5. **Marca y dominio.** No existe ninguna agencia ARTERIX de diseño web en los resultados. Sí existe una "Arterix" registrada en CABA (servicios para espectáculos, rubro distinto) y nombres parecidos como "Arteixo" o "Arteria", que confunden la búsqueda. La URL `sitio-arterix-final.vercel.app` no contiene "arterix" y sí contiene la marca correcta.
 6. **Indexación.** `site:` no devolvió nada (estimado: probablemente no indexado, el buscador de la herramienta no es Google).
 7. **Competencia (estimado, no medido).** Para "agencia web Escobar" y "diseño web zona norte" no aparecen agencias locales claras: salen perfiles de otros países y directorios genéricos. La competencia local directa es baja. En "agencia de sitios web" a secas la competencia es alta (directorios y agencias grandes de Buenos Aires), así que el foco realista es Escobar, zona norte y la marca.
 8. **OG image** decía "Diseño web e integración CRM Tokko".
@@ -65,7 +65,7 @@ Limitaciones: sin Search Console ni Analytics. Demanda y competencia son "estima
 
 | Acción | Impacto | Esfuerzo | Dónde |
 |---|---|---|---|
-| Dominio propio (arterix.com.ar). Como paso rápido, agregar en Vercel el dominio `arterix.vercel.app` si está libre. Después reemplazar `arterix.vercel.app` en: `index.html`, las 2 páginas nuevas, `sitemap.xml`, `robots.txt` (el reemplazo lo hago yo con `/arterix-seo aplicar`) | Alto | Bajo | Vercel / NIC.ar |
+| Dominio propio (arterix.com.ar). Como paso rápido, agregar en Vercel el dominio `sitio-arterix-final.vercel.app` si está libre. Después reemplazar `sitio-arterix-final.vercel.app` en: `index.html`, las 2 páginas nuevas, `sitemap.xml`, `robots.txt` (el reemplazo lo hago yo con `/arterix-seo aplicar`) | Alto | Bajo | Vercel / NIC.ar |
 | Alta en Google Search Console: verificar el sitio, enviar `sitemap.xml` y pedir indexación de las 3 URLs. Sin esto la home puede tardar semanas en aparecer | Alto | Bajo | Search Console |
 | Google Business Profile como negocio de servicio (área: Escobar y zona norte, sin mostrar dirección si es domicilio). Categoría principal: "Diseñador de sitios web" o "Agencia de diseño web". Nombre exactamente "ARTERIX", teléfono, sitio, fotos y reseñas. Es lo que más ayuda para "ARTERIX" y "agencia web Escobar" | Alto | Medio | GBP |
 | Perfiles de marca con el nombre "ARTERIX": Instagram, LinkedIn, Facebook. Luego agregar `sameAs` al schema. Ayuda a que Google asocie la marca con el sitio | Alto | Bajo | Redes |
